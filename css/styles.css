@@ -1,4 +1,4 @@
-﻿@media (min-width: 769px) {
+@media (min-width: 769px) {
   /* line 19, ../sass/_common.sass */
   .envelope {
     text-align: center;
@@ -18,11 +18,6 @@
   }
 
   /* line 30, ../sass/_common.sass */
-  .main-pic {
-    z-index: 999;
-  }
-
-  /* line 33, ../sass/_common.sass */
   .img1 {
     -webkit-transform: rotate(-10deg);
     -moz-transform: rotate(-10deg);
@@ -32,7 +27,7 @@
     left: 25%;
   }
 
-  /* line 36, ../sass/_common.sass */
+  /* line 33, ../sass/_common.sass */
   .img2 {
     -webkit-transform: rotate(-5deg);
     -moz-transform: rotate(-5deg);
@@ -43,13 +38,13 @@
     margin-top: -4em;
   }
 
-  /* line 40, ../sass/_common.sass */
+  /* line 37, ../sass/_common.sass */
   .img3 {
     margin-top: -6em;
     left: 45%;
   }
 
-  /* line 43, ../sass/_common.sass */
+  /* line 40, ../sass/_common.sass */
   .img4 {
     -webkit-transform: rotate(5deg);
     -moz-transform: rotate(5deg);
@@ -60,7 +55,7 @@
     left: 55%;
   }
 
-  /* line 47, ../sass/_common.sass */
+  /* line 44, ../sass/_common.sass */
   .img5 {
     -webkit-transform: rotate(10deg);
     -moz-transform: rotate(10deg);
@@ -70,7 +65,7 @@
     left: 66%;
   }
 
-  /* line 51, ../sass/_common.sass */
+  /* line 48, ../sass/_common.sass */
   .img6 {
     -webkit-transform: rotate(-20deg);
     -moz-transform: rotate(-20deg);
@@ -81,7 +76,7 @@
     margin-top: 24em;
   }
 
-  /* line 55, ../sass/_common.sass */
+  /* line 52, ../sass/_common.sass */
   .img7 {
     -webkit-transform: rotate(-10deg);
     -moz-transform: rotate(-10deg);
@@ -92,13 +87,13 @@
     margin-top: 20em;
   }
 
-  /* line 59, ../sass/_common.sass */
+  /* line 56, ../sass/_common.sass */
   .img8 {
     left: 45%;
     margin-top: 18em;
   }
 
-  /* line 62, ../sass/_common.sass */
+  /* line 59, ../sass/_common.sass */
   .img9 {
     -webkit-transform: rotate(10deg);
     -moz-transform: rotate(10deg);
@@ -109,7 +104,7 @@
     margin-top: 20em;
   }
 
-  /* line 66, ../sass/_common.sass */
+  /* line 63, ../sass/_common.sass */
   .img10 {
     -webkit-transform: rotate(20deg);
     -moz-transform: rotate(20deg);
@@ -121,7 +116,7 @@
     margin-bottom: 10em;
   }
 }
-/* line 72, ../sass/_common.sass */
+/* line 69, ../sass/_common.sass */
 body {
   font-family: "微軟正黑體", "arial";
   background: url(.././img/bg.png) no-repeat center center fixed;
@@ -131,18 +126,29 @@ body {
   background-size: cover;
 }
 
-/* line 77, ../sass/_common.sass */
+/* line 74, ../sass/_common.sass */
 .row {
   margin-left: 0;
   margin-right: 0;
 }
 
-/* line 81, ../sass/_common.sass */
+/* line 78, ../sass/_common.sass */
 .no-padding {
   padding: 0;
 }
 
-/* line 86, ../sass/_common.sass */
+/* line 81, ../sass/_common.sass */
+.main-pic {
+  z-index: 999;
+  display: none;
+}
+
+/* line 84, ../sass/_common.sass */
+.pull-right, .pull-left, .content, .bottom {
+  display: none;
+}
+
+/* line 87, ../sass/_common.sass */
 .btn-download {
   border: 1px solid black;
   padding: 1em 2em;

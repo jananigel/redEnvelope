@@ -16,6 +16,11 @@ $(function(){
 	_footerImgW = 0;
 	
 
+	_footerImgW = (($('.footer').width() / 2) - 10) * -1;
+	$('.footer').css({
+		marginLeft: _footerImgW
+	});
+	
 	$('a.redEnv').click(function(){
 		$('.modal-body img').attr('src', 'img/src/' + $(this).children('img').attr('src').substr(4));
 		_imgName = 'img/src/' + $(this).children('img').attr('src').substr(4);

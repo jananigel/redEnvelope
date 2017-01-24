@@ -144,8 +144,12 @@ body {
 }
 
 /* line 84, ../sass/_common.sass */
-.pull-right, .pull-left, .content, .bottom {
+.pull-right, .pull-left, .content {
   display: none;
+}
+
+.bottom {
+  opacity: 0;
 }
 
 /* line 87, ../sass/_common.sass */

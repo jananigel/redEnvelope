@@ -28,19 +28,15 @@ $(function(){
 	    a[0].click();
 	    a.remove();
 	});
-	$('.main-pic').fadeIn('slow' , function(){
-		$('.pull-left').fadeIn('slow');
-		$('.pull-right').fadeIn('slow', function(){
-			$('.content').fadeIn('slow' , function(){
-				$('.bottom').fadeIn('slow' , function(){
-					_footerImgW = (($('.footer').width() / 2) - 10) * -1;
-					$('.footer').css({
-						marginLeft: _footerImgW
-					});
-				});
-			});
-		});
-	})
+	$('.main-pic').fadeIn('500');
+	$('.pull-left').delay('500').fadeIn('500');
+	$('.pull-right').delay('1000').fadeIn('500');
+	$('.content').delay('1500').fadeIn('500');
+	$('.bottom').delay('2000').animate({
+		opacity: 1
+	}, 500 , function(){
+
+	});
 })
 
 $(window).resize(function(){

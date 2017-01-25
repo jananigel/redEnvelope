@@ -375,7 +375,7 @@ body {
 .footer {
   width: 80%;
   position: fixed;
-  bottom: 0em;
+  bottom: -1em;
   left: 50%;
   margin-left: -25%;
   pointer-events: none;

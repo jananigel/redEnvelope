@@ -15,13 +15,6 @@ $(function(){
 	_imgName = "";
 	_footerImgW = 0;
 
-	var invocation = new XMLHttpRequest();
-	var url = "http://60.250.132.191/NHIS2017/Api/Json/AreaJson"
-	$.get('http://60.250.132.191/NHIS2017/Api/Json/AreaJson',
-	 function(data){
-		console.log(data.query);
-	});
-
 	_footerImgW = (($('.footer').width() / 2)-50) * -1;
 	$('.footer').css({
 		marginLeft: _footerImgW
@@ -50,24 +43,6 @@ $(function(){
 	}, 500 , function(){
 
 	});
-	/*$('.bottom').delay('2000').fadeIn('500' , function(){
-		_footerImgW = (($('.footer').width() / 2)-50) * -1;
-		$('.footer').css({
-			marginLeft: _footerImgW
-		});
-	});*/
-	$('.closeBtn').click(function(e){
-		console.log('close');
-		$('.border').css({
-			width: '0%'
-		});
-	})
-	$('.openBtn').click(function(e){
-		console.log('open');
-		$('.border').css({
-			width: '240px'
-		});
-	})
 	
 });
 

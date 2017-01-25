@@ -1,23 +1,198 @@
-@media (min-width: 769px) {
+@-webkit-keyframes sm-bounce {
+  /* line 17, ../sass/_common.sass */
+  0% {
+    top: 0em;
+  }
+
   /* line 19, ../sass/_common.sass */
+  50% {
+    top: 1.3em;
+  }
+
+  /* line 21, ../sass/_common.sass */
+  100% {
+    top: 0em;
+  }
+}
+
+@-moz-keyframes sm-bounce {
+  /* line 17, ../sass/_common.sass */
+  0% {
+    top: 0em;
+  }
+
+  /* line 19, ../sass/_common.sass */
+  50% {
+    top: 1.3em;
+  }
+
+  /* line 21, ../sass/_common.sass */
+  100% {
+    top: 0em;
+  }
+}
+
+@-ms-keyframes sm-bounce {
+  /* line 17, ../sass/_common.sass */
+  0% {
+    top: 0em;
+  }
+
+  /* line 19, ../sass/_common.sass */
+  50% {
+    top: 1.3em;
+  }
+
+  /* line 21, ../sass/_common.sass */
+  100% {
+    top: 0em;
+  }
+}
+
+@keyframes sm-bounce {
+  /* line 17, ../sass/_common.sass */
+  0% {
+    top: 0em;
+  }
+
+  /* line 19, ../sass/_common.sass */
+  50% {
+    top: 1.3em;
+  }
+
+  /* line 21, ../sass/_common.sass */
+  100% {
+    top: 0em;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 28, ../sass/_common.sass */
+  .bottom-left {
+    position: fixed;
+    top: 0;
+    text-align: left;
+    display: none;
+    -webkit-animation: sm-bounce 1.5s infinite alternate;
+    -moz-animation: sm-bounce 1.5s infinite alternate;
+    -o-animation: sm-bounce 1.5s infinite alternate;
+    animation: sm-bounce 1.5s infinite alternate;
+  }
+  /* line 34, ../sass/_common.sass */
+  .bottom-left img {
+    width: 40%;
+  }
+
+  /* line 36, ../sass/_common.sass */
+  .bottom-right {
+    position: fixed;
+    top: 0;
+    right: 1em;
+    text-align: right;
+    display: none;
+    -webkit-animation: sm-bounce 1.5s infinite alternate;
+    -moz-animation: sm-bounce 1.5s infinite alternate;
+    -o-animation: sm-bounce 1.5s infinite alternate;
+    animation: sm-bounce 1.5s infinite alternate;
+  }
+  /* line 43, ../sass/_common.sass */
+  .bottom-right img {
+    width: 40%;
+  }
+
+  /* line 45, ../sass/_common.sass */
+  .col-xs-2 {
+    width: 20%;
+  }
+}
+@media (min-width: 769px) {
+  @-webkit-keyframes bounce {
+    /* line 51, ../sass/_common.sass */
+    0% {
+      bottom: 0em;
+    }
+
+    /* line 53, ../sass/_common.sass */
+    50% {
+      bottom: 1.3em;
+    }
+
+    /* line 55, ../sass/_common.sass */
+    100% {
+      bottom: 0em;
+    }
+}
+
+  @-moz-keyframes bounce {
+    /* line 51, ../sass/_common.sass */
+    0% {
+      bottom: 0em;
+    }
+
+    /* line 53, ../sass/_common.sass */
+    50% {
+      bottom: 1.3em;
+    }
+
+    /* line 55, ../sass/_common.sass */
+    100% {
+      bottom: 0em;
+    }
+}
+
+  @-ms-keyframes bounce {
+    /* line 51, ../sass/_common.sass */
+    0% {
+      bottom: 0em;
+    }
+
+    /* line 53, ../sass/_common.sass */
+    50% {
+      bottom: 1.3em;
+    }
+
+    /* line 55, ../sass/_common.sass */
+    100% {
+      bottom: 0em;
+    }
+}
+
+  @keyframes bounce {
+    /* line 51, ../sass/_common.sass */
+    0% {
+      bottom: 0em;
+    }
+
+    /* line 53, ../sass/_common.sass */
+    50% {
+      bottom: 1.3em;
+    }
+
+    /* line 55, ../sass/_common.sass */
+    100% {
+      bottom: 0em;
+    }
+}
+
+  /* line 58, ../sass/_common.sass */
   .envelope {
     text-align: center;
     margin: 0 auto;
   }
 
-  /* line 22, ../sass/_common.sass */
+  /* line 61, ../sass/_common.sass */
   .redEnv {
     display: inline-block;
     width: 180px;
     height: 300px;
     position: absolute;
   }
-  /* line 27, ../sass/_common.sass */
+  /* line 66, ../sass/_common.sass */
   .redEnv img {
     width: 80%;
   }
 
-  /* line 30, ../sass/_common.sass */
+  /* line 69, ../sass/_common.sass */
   .img1 {
     -webkit-transform: rotate(-10deg);
     -moz-transform: rotate(-10deg);
@@ -27,7 +202,7 @@
     left: 25%;
   }
 
-  /* line 33, ../sass/_common.sass */
+  /* line 72, ../sass/_common.sass */
   .img2 {
     -webkit-transform: rotate(-5deg);
     -moz-transform: rotate(-5deg);
@@ -38,13 +213,13 @@
     margin-top: -4em;
   }
 
-  /* line 37, ../sass/_common.sass */
+  /* line 76, ../sass/_common.sass */
   .img3 {
     margin-top: -6em;
     left: 45%;
   }
 
-  /* line 40, ../sass/_common.sass */
+  /* line 79, ../sass/_common.sass */
   .img4 {
     -webkit-transform: rotate(5deg);
     -moz-transform: rotate(5deg);
@@ -55,7 +230,7 @@
     left: 55%;
   }
 
-  /* line 44, ../sass/_common.sass */
+  /* line 83, ../sass/_common.sass */
   .img5 {
     -webkit-transform: rotate(10deg);
     -moz-transform: rotate(10deg);
@@ -65,7 +240,7 @@
     left: 66%;
   }
 
-  /* line 48, ../sass/_common.sass */
+  /* line 87, ../sass/_common.sass */
   .img6 {
     -webkit-transform: rotate(-20deg);
     -moz-transform: rotate(-20deg);
@@ -76,7 +251,7 @@
     margin-top: 24em;
   }
 
-  /* line 52, ../sass/_common.sass */
+  /* line 91, ../sass/_common.sass */
   .img7 {
     -webkit-transform: rotate(-10deg);
     -moz-transform: rotate(-10deg);
@@ -87,13 +262,13 @@
     margin-top: 20em;
   }
 
-  /* line 56, ../sass/_common.sass */
+  /* line 95, ../sass/_common.sass */
   .img8 {
     left: 45%;
     margin-top: 18em;
   }
 
-  /* line 59, ../sass/_common.sass */
+  /* line 98, ../sass/_common.sass */
   .img9 {
     -webkit-transform: rotate(10deg);
     -moz-transform: rotate(10deg);
@@ -104,7 +279,7 @@
     margin-top: 20em;
   }
 
-  /* line 63, ../sass/_common.sass */
+  /* line 102, ../sass/_common.sass */
   .img10 {
     -webkit-transform: rotate(20deg);
     -moz-transform: rotate(20deg);
@@ -115,8 +290,42 @@
     margin-top: 24em;
     margin-bottom: 10em;
   }
+
+  /* line 107, ../sass/_common.sass */
+  .bottom-left {
+    position: fixed;
+    left: 1em;
+    bottom: 0;
+    text-align: left;
+    display: none;
+    -webkit-animation: bounce 1.5s infinite alternate;
+    -moz-animation: bounce 1.5s infinite alternate;
+    -o-animation: bounce 1.5s infinite alternate;
+    animation: bounce 1.5s infinite alternate;
+  }
+  /* line 114, ../sass/_common.sass */
+  .bottom-left img {
+    width: 100%;
+  }
+
+  /* line 116, ../sass/_common.sass */
+  .bottom-right {
+    position: fixed;
+    bottom: 0;
+    right: 1em;
+    text-align: right;
+    display: none;
+    -webkit-animation: bounce 1.5s infinite alternate;
+    -moz-animation: bounce 1.5s infinite alternate;
+    -o-animation: bounce 1.5s infinite alternate;
+    animation: bounce 1.5s infinite alternate;
+  }
+  /* line 123, ../sass/_common.sass */
+  .bottom-right img {
+    width: 100%;
+  }
 }
-/* line 69, ../sass/_common.sass */
+/* line 126, ../sass/_common.sass */
 body {
   font-family: "微軟正黑體", "arial";
   background: url(.././img/bg.png) no-repeat center center fixed;
@@ -126,33 +335,34 @@ body {
   background-size: cover;
 }
 
-/* line 74, ../sass/_common.sass */
+/* line 131, ../sass/_common.sass */
 .row {
   margin-left: 0;
   margin-right: 0;
 }
 
-/* line 78, ../sass/_common.sass */
+/* line 135, ../sass/_common.sass */
 .no-padding {
   padding: 0;
 }
 
-/* line 81, ../sass/_common.sass */
+/* line 138, ../sass/_common.sass */
 .main-pic {
   z-index: 999;
   display: none;
 }
 
-/* line 84, ../sass/_common.sass */
+/* line 141, ../sass/_common.sass */
 .pull-right, .pull-left, .content {
   display: none;
 }
 
+/* line 143, ../sass/_common.sass */
 .bottom {
   opacity: 0;
 }
 
-/* line 87, ../sass/_common.sass */
+/* line 146, ../sass/_common.sass */
 .btn-download {
   border: 1px solid black;
   padding: 1em 2em;

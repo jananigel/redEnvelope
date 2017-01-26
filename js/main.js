@@ -32,7 +32,11 @@ $(function(){
 	    a[0].click();
 	    a.remove();
 	});
-
+	
+	$('.main-pic').click(function(){
+		$('.modal-body img').attr('src', 'img/src/tutorial.png');
+		_imgName = 'img/src/tutorial.png';
+	});
 	$('img.main-pic').load(function(){
 		$('.main-pic').fadeIn('500');
 		$('.pull-left').delay('500').fadeIn('500');

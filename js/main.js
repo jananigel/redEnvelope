@@ -33,15 +33,17 @@ $(function(){
 	    a.remove();
 	});
 
-	$('.main-pic').fadeIn('500');
-	$('.pull-left').delay('500').fadeIn('500');
-	$('.pull-right').delay('1000').fadeIn('500');
-	$('.content').delay('1500').fadeIn('500');
-	$('.bottom-left,.bottom-right').delay('2000').fadeIn('500');
-	$('.bottom').delay('2000').animate({
-		opacity: 1
-	}, 500 , function(){
+	$('img.main-pic').load(function(){
+		$('.main-pic').fadeIn('500');
+		$('.pull-left').delay('500').fadeIn('500');
+		$('.pull-right').delay('1000').fadeIn('500');
+		$('.content').delay('1500').fadeIn('500');
+		$('.bottom-left,.bottom-right').delay('2000').fadeIn('500');
+		$('.bottom').delay('2000').animate({
+			opacity: 1
+		}, 500 , function(){
 
+		});
 	});
 	
 });
